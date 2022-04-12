@@ -1663,6 +1663,15 @@ function Library:dropdown(options)
 		        return false
 		    end
 		end
+		
+		function methods:DoesntContainItem(meti)
+		for i, v in pairs(itemContainer.AbsoluteObject:GetChildren()) do
+		    if v:IsA("TextButton") and v.Text ~= meti then
+		        return true
+		    else
+		        return false
+		    end
+		end
 
 		newSize = (25 * #items) + 5
 		itemContainer:tween{Size = (not open and UDim2.new(1, -10, 0, 0)) or UDim2.new(1, -10, 0, newSize)}
