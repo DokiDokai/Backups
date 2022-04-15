@@ -1,4 +1,3 @@
--- This User Interface Library is brought to you by Solaris Software.
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = tostring(math.random())
 Solaris.Parent = game.CoreGui
@@ -151,9 +150,9 @@ local SolarisLib = {
     },
     Settings = {
         Theme = "Default",
-        ShowFriendsOnLaunch = true,
-        ShowMusicOnLaunch = true,
-        CloseBind = "RightControl"
+        ShowFriendsOnLaunch = false,
+        ShowMusicOnLaunch = false,
+        CloseBind = "LeftAlt"
     },
     Flags = {},
     CurrentTab
@@ -162,7 +161,6 @@ local SolarisLib = {
 
 
 local MainUI = game:GetObjects("rbxassetid://7835727566")[1]
-print("SolarisLib Loaded!")
 local function MakeDraggable(topbarobject, object) 
     pcall(function()
 		local dragging, dragInput, mousePos, framePos = false
@@ -614,11 +612,7 @@ function SolarisLib:New(Config)
         end   
         
         local general = Settings:Tab("General")
-        general:ToggleSetting("Show Music On Launch", "Shows the music menu when you load the UI", true, "ShowMusicOnLaunch")
-        general:BindSetting("Close Bind", "Hides/Shows the main window when pressed.", Enum.KeyCode.RightControl, "CloseBind")
-        
-        local appearance = Settings:Tab("Appearance")
-        appearance:Dropdown("Theme", "The look of the user interface", {"Default", "Discord", "Red", "Green", "Blue"}, "Default", "Theme")
+        general:BindSetting("Close Bind", "Hides/Shows the main window when pressed.", Enum.KeyCode.LeftAlt, "CloseBind")
 
     end 
     MusicConstructor()
