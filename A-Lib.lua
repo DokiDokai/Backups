@@ -650,8 +650,7 @@ function SolarisLib:New(Config)
     MFrame.TopBar.ButtonHolder.MenuBtn.MouseButton1Click:Connect(function() MFrame.TopBar.ButtonHolder.MenuBtn.MenuFrame.Visible = not MFrame.TopBar.ButtonHolder.MenuBtn.MenuFrame.Visible end)
 
     MFrame.TopBar.ButtonHolder.CloseBtn.MouseButton1Click:Connect(function()
-        uitoggled = not uitoggled
-        MainUI.Visible = uitoggled
+        Solaris:Destroy()
     end)
 
 
