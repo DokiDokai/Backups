@@ -135,7 +135,7 @@ function Console:Window(consoledebugger)
     ConsoleContainer.BackgroundTransparency = 1.000
     ConsoleContainer.BorderSizePixel = 0
     ConsoleContainer.Position = UDim2.new(0, 10, 0, 50)
-    ConsoleContainer.Size = UDim2.new(0, 580, 0, 190)
+    ConsoleContainer.Size = UDim2.new(0, 580, 0, 240)
     ConsoleContainer.ZIndex = 3
     ConsoleContainer.BottomImage = ""
     ConsoleContainer.CanvasSize = UDim2.new(0, 0, 0, 0)
