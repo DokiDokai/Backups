@@ -210,7 +210,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked_Title_2.Size = UDim2.new(0, 80, 0, 14)
     AutoScroll_Locked_Title_2.ZIndex = 4
     AutoScroll_Locked_Title_2.Font = Enum.Font.GothamSemibold
-    AutoScroll_Locked_Title_2.Text = "[RightAlt]"
+    AutoScroll_Locked_Title_2.Text = "[LeftControl]"
     AutoScroll_Locked_Title_2.TextColor3 = Color3.fromRGB(220, 220, 220)
     AutoScroll_Locked_Title_2.TextSize = 14.000
     AutoScroll_Locked_Title_2.TextXAlignment = Enum.TextXAlignment.Left
@@ -224,7 +224,7 @@ function Console:Window(consoledebugger)
 
     local function onInputBegan(input, gameProcessed)
         if input.UserInputType == Enum.UserInputType.Keyboard then
-            if input.KeyCode == Enum.KeyCode.RightAlt then
+            if input.KeyCode == Enum.KeyCode.LeftControl then
                 STX_Console.Enabled = not STX_Console.Enabled
             end
         end
