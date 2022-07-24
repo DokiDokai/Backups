@@ -51,7 +51,7 @@ function Console:Window(consoledebugger)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
     ambientShadow.Position = GuiPosition
-    ambientShadow.Size = UDim2.new(0, 260, 0, 260)
+    ambientShadow.Size = UDim2.new(0, 610, 0, 310)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
     ambientShadow.ImageTransparency = 0.400
@@ -117,7 +117,7 @@ function Console:Window(consoledebugger)
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
-    Window.Size = UDim2.new(0, 250, 0, 250)
+    Window.Size = UDim2.new(0, 600, 0, 300)
     Window.ZIndex = 2
     
     Outline_A.Name = "Outline_A"
