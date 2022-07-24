@@ -216,7 +216,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked_Title_2.TextXAlignment = Enum.TextXAlignment.Left
 
     local function ResizeContainer()
-        ConsoleContainer.CanvasSize = UDim2.new(0, 0, 0, ConsoleContainerUIListLayout.AbsoluteContentSize.Y + ConsoleContainerUIListLayout.Padding.Offset)
+        ConsoleContainer.CanvasSize = UDim2.new(0, 0, 0, 300 + ConsoleContainerUIListLayout.Padding.Offset)
     end
     ConsoleContainerUIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(ResizeContainer)
 
