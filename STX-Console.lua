@@ -241,10 +241,10 @@ function Console:Window(consoledebugger)
         local now = os.time()
         local Time = tostring(pretty_date(os.date("*t", now)))
         local DefaultTitle = "["..tostring(Time).."]".." "..tostring(PromptTitle)
-        local SuccessTitle = "["..tostring(Time).."]".." {Success} : "..tostring(PromptTitle)
-        local FailTitle = "["..tostring(Time).."]".." {Error} : "..tostring(PromptTitle)
-        local WarningTitle = "["..tostring(Time).."]".." {Warning} : "..tostring(PromptTitle)
-        local NofiticationTitle = "["..tostring(Time).."]".." {Nofitication} : "..tostring(PromptTitle)
+        local SuccessTitle = "["..tostring(Time).."]".." "..tostring(PromptTitle)
+        local FailTitle = "["..tostring(Time).."]".." "..tostring(PromptTitle)
+        local WarningTitle = "["..tostring(Time).."]".." "..tostring(PromptTitle)
+        local NofiticationTitle = "["..tostring(Time).."]".." "..tostring(PromptTitle)
 
         local TextLabel = Instance.new("TextLabel")
 
@@ -276,7 +276,7 @@ function Console:Window(consoledebugger)
         elseif Type == ("warning") then
             TextLabel.Text = tostring(WarningTitle)
             TextLabel.TextColor3 = Color3.fromRGB(202, 156, 107)
-        elseif Type == ("nofitication") then
+        elseif Type == ("notification") then
             TextLabel.Text = tostring(NofiticationTitle)
             TextLabel.TextColor3 = Color3.fromRGB(121, 130, 255)
         end
