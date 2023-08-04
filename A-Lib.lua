@@ -26,8 +26,6 @@ local function CheckKey(tab, key)
 	end
 end
 
-
-
 script = oldScript
 
 local SolarisLib = {
